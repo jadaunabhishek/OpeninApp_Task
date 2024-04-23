@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		D55821162BD6571A005A00F9 /* OpeninApp_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821152BD6571A005A00F9 /* OpeninApp_TaskApp.swift */; };
 		D55821182BD6571A005A00F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821172BD6571A005A00F9 /* ContentView.swift */; };
-		D558211A2BD6571C005A00F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55821192BD6571C005A00F9 /* Assets.xcassets */; };
+		D558211A2BD6571C005A00F9 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55821192BD6571C005A00F9 /* assets.xcassets */; };
 		D558211D2BD6571C005A00F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D558211C2BD6571C005A00F9 /* Preview Assets.xcassets */; };
 		D55821272BD6571C005A00F9 /* OpeninApp_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821262BD6571C005A00F9 /* OpeninApp_TaskTests.swift */; };
 		D55821312BD6571C005A00F9 /* OpeninApp_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821302BD6571C005A00F9 /* OpeninApp_TaskUITests.swift */; };
 		D55821332BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821322BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift */; };
+		D55821402BD68021005A00F9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558213F2BD68021005A00F9 /* DashboardView.swift */; };
+		D55821462BD6E2CA005A00F9 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D55821452BD6E2CA005A00F9 /* SwiftUICharts */; };
+		D55821482BD6E3C2005A00F9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */; };
+		D5A9E8D82BD777CF00714046 /* FrontendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E8D72BD777CF00714046 /* FrontendView.swift */; };
+		D5A9E9132BD82DF400714046 /* RecentLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9122BD82DF400714046 /* RecentLinksView.swift */; };
+		D5A9E9152BD82E0300714046 /* TopLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9142BD82E0300714046 /* TopLinksView.swift */; };
+		D5A9E9182BD82EC400714046 /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9172BD82EC400714046 /* PickerButton.swift */; };
+		D5A9E91A2BD832ED00714046 /* CustomLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9192BD832ED00714046 /* CustomLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +45,20 @@
 		D55821122BD6571A005A00F9 /* OpeninApp_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpeninApp_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55821152BD6571A005A00F9 /* OpeninApp_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskApp.swift; sourceTree = "<group>"; };
 		D55821172BD6571A005A00F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D55821192BD6571C005A00F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D55821192BD6571C005A00F9 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		D558211C2BD6571C005A00F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D55821222BD6571C005A00F9 /* OpeninApp_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeninApp_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55821262BD6571C005A00F9 /* OpeninApp_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskTests.swift; sourceTree = "<group>"; };
 		D558212C2BD6571C005A00F9 /* OpeninApp_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeninApp_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55821302BD6571C005A00F9 /* OpeninApp_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskUITests.swift; sourceTree = "<group>"; };
 		D55821322BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D558213F2BD68021005A00F9 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		D5A9E8D72BD777CF00714046 /* FrontendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontendView.swift; sourceTree = "<group>"; };
+		D5A9E9122BD82DF400714046 /* RecentLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLinksView.swift; sourceTree = "<group>"; };
+		D5A9E9142BD82E0300714046 /* TopLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLinksView.swift; sourceTree = "<group>"; };
+		D5A9E9172BD82EC400714046 /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
+		D5A9E9192BD832ED00714046 /* CustomLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D55821462BD6E2CA005A00F9 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +94,7 @@
 				D55821252BD6571C005A00F9 /* OpeninApp_TaskTests */,
 				D558212F2BD6571C005A00F9 /* OpeninApp_TaskUITests */,
 				D55821132BD6571A005A00F9 /* Products */,
+				D55821442BD6E2CA005A00F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +111,14 @@
 		D55821142BD6571A005A00F9 /* OpeninApp_Task */ = {
 			isa = PBXGroup;
 			children = (
+				D5A9E9162BD82EAF00714046 /* CustomDesignViews */,
+				D5A9E9112BD82DCF00714046 /* Views */,
 				D55821152BD6571A005A00F9 /* OpeninApp_TaskApp.swift */,
 				D55821172BD6571A005A00F9 /* ContentView.swift */,
-				D55821192BD6571C005A00F9 /* Assets.xcassets */,
+				D55821192BD6571C005A00F9 /* assets.xcassets */,
 				D558211B2BD6571C005A00F9 /* Preview Content */,
+				D558213F2BD68021005A00F9 /* DashboardView.swift */,
+				D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */,
 			);
 			path = OpeninApp_Task;
 			sourceTree = "<group>";
@@ -127,6 +148,32 @@
 			path = OpeninApp_TaskUITests;
 			sourceTree = "<group>";
 		};
+		D55821442BD6E2CA005A00F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5A9E9112BD82DCF00714046 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5A9E8D72BD777CF00714046 /* FrontendView.swift */,
+				D5A9E9122BD82DF400714046 /* RecentLinksView.swift */,
+				D5A9E9142BD82E0300714046 /* TopLinksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5A9E9162BD82EAF00714046 /* CustomDesignViews */ = {
+			isa = PBXGroup;
+			children = (
+				D5A9E9172BD82EC400714046 /* PickerButton.swift */,
+				D5A9E9192BD832ED00714046 /* CustomLink.swift */,
+			);
+			path = CustomDesignViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +190,9 @@
 			dependencies = (
 			);
 			name = OpeninApp_Task;
+			packageProductDependencies = (
+				D55821452BD6E2CA005A00F9 /* SwiftUICharts */,
+			);
 			productName = OpeninApp_Task;
 			productReference = D55821122BD6571A005A00F9 /* OpeninApp_Task.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = D55821092BD6571A005A00F9;
+			packageReferences = (
+				D55821432BD6E2BB005A00F9 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = D55821132BD6571A005A00F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D558211D2BD6571C005A00F9 /* Preview Assets.xcassets in Resources */,
-				D558211A2BD6571C005A00F9 /* Assets.xcassets in Resources */,
+				D558211A2BD6571C005A00F9 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5A9E9152BD82E0300714046 /* TopLinksView.swift in Sources */,
+				D5A9E8D82BD777CF00714046 /* FrontendView.swift in Sources */,
 				D55821182BD6571A005A00F9 /* ContentView.swift in Sources */,
+				D55821402BD68021005A00F9 /* DashboardView.swift in Sources */,
+				D5A9E9182BD82EC400714046 /* PickerButton.swift in Sources */,
+				D5A9E9132BD82DF400714046 /* RecentLinksView.swift in Sources */,
+				D55821482BD6E3C2005A00F9 /* SwiftUIView.swift in Sources */,
+				D5A9E91A2BD832ED00714046 /* CustomLink.swift in Sources */,
 				D55821162BD6571A005A00F9 /* OpeninApp_TaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +648,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D55821432BD6E2BB005A00F9 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D55821452BD6E2CA005A00F9 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D55821432BD6E2BB005A00F9 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D558210A2BD6571A005A00F9 /* Project object */;
 }
