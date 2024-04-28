@@ -11,7 +11,7 @@ import SwiftUI
 struct OpeninApp_TaskApp: App {
     var body: some Scene {
         WindowGroup {
-            FrontendView()
+            Dashboard()
         }
     }
 }

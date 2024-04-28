@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftUICharts
 
-struct FrontendView: View {
+struct Dashboard: View {
     
     @State private var selectedIndex = 0
     @State private var apiResponse: ApiResponseModel?
@@ -43,27 +43,21 @@ struct FrontendView: View {
                         .offset(y: -40)
                         
                         VStack(alignment: .leading) {
-                            Text(greetingForTimeOfDay()) // Display dynamic greeting
+                            Text(greetingForTimeOfDay())
                                 .font(.title3)
                                 .foregroundColor(.gray)
                                 .padding(.leading)
+                                .padding(.top, 25)
                             
                             Text("Ajay Manva 👋")
                                 .font(.title)
                                 .fontWeight(.semibold)
                                 .padding(.leading)
                             
-                            
                             if let recentLinks = apiResponse?.data.recentLinks {
-                                HStack {
-                                    
-                                    LineChartView(data: recentLinks.map { Double($0.totalClicks) }, title: "Total", legend: "Recent Links")
-                                    
-                                    PieChartView(data: recentLinks.map { Double($0.totalClicks) }, title: "Total Clicks Over Time", legend: "Recent Links")
-                                }
-                                .padding(.horizontal)
+                                LineChart()
                             }
-                
+                            
                             
                             ScrollView(.horizontal) {
                                 HStack {
@@ -89,13 +83,13 @@ struct FrontendView: View {
                                     
                                 }
                             }
-                            .padding([.top, .bottom, .leading])
+                            .padding([.bottom, .leading])
                             
                             HStack {
                                 Image("priceboost")
                                 Text("View Analytics")
                                     .font(.title3)
-                                    .padding()
+                                    .padding(10)
                                 
                             }
                             .foregroundColor(Color.black)
@@ -136,7 +130,7 @@ struct FrontendView: View {
                                 Image("link")
                                 Text("View all Links")
                                     .font(.title3)
-                                    .padding()
+                                    .padding(10)
                                 
                             }
                             .foregroundColor(Color.black)
@@ -194,12 +188,10 @@ struct FrontendView: View {
                             )
                             .padding()
                             .padding(.bottom)
-                            
-                            
-
 
                         }
-                        .onAppear {
+                        .offset(y: -40)
+                        .onAppear{
                             fetchData()
                         }
                     }
@@ -220,7 +212,7 @@ struct FrontendView: View {
                         }
                         
                         
-                        // Center Button (QR) Offset
+
                         Button(action: {
                             self.selectedIndex = 2
                         }) {
@@ -232,7 +224,7 @@ struct FrontendView: View {
                                 .offset(y: -15)
                                 .padding(12)
                         }
-                        .foregroundColor(selectedIndex == 2 ? .black : .gray) // Change foreground color
+                        .foregroundColor(selectedIndex == 2 ? .black : .gray)
                         
                         
                         TabBarButton(imageName: "Media", buttonName: "Campaigns", isSelected: selectedIndex == 3) {
@@ -294,6 +286,8 @@ struct FrontendView: View {
                 
                 DispatchQueue.main.async {
                     self.apiResponse = decodedResponse
+                    print("Retrieved API Response:")
+                    print(decodedResponse) // Print the decoded API response
                 }
             } catch {
                 print("Error decoding JSON: \(error.localizedDescription)")
@@ -317,14 +311,14 @@ struct TabBarButton: View {
                     .renderingMode(.original)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 35, height: 35) // Icon size
+                    .frame(width: 35, height: 35)
                     .padding(10)
                     .offset(y: 10)
                 Text(buttonName)
                     .font(.caption)
             }
         }
-        .foregroundColor(isSelected ? .black : .gray) // Change foreground color
+        .foregroundColor(isSelected ? .black : .gray)
     }
 }
 
@@ -369,5 +363,5 @@ struct CustomCard: View {
 
 
 #Preview {
-    FrontendView()
+    Dashboard()
 }

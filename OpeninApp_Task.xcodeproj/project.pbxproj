@@ -14,10 +14,11 @@
 		D55821272BD6571C005A00F9 /* OpeninApp_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821262BD6571C005A00F9 /* OpeninApp_TaskTests.swift */; };
 		D55821312BD6571C005A00F9 /* OpeninApp_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821302BD6571C005A00F9 /* OpeninApp_TaskUITests.swift */; };
 		D55821332BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821322BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift */; };
-		D55821402BD68021005A00F9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D558213F2BD68021005A00F9 /* DashboardView.swift */; };
 		D55821462BD6E2CA005A00F9 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D55821452BD6E2CA005A00F9 /* SwiftUICharts */; };
 		D55821482BD6E3C2005A00F9 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */; };
-		D5A9E8D82BD777CF00714046 /* FrontendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E8D72BD777CF00714046 /* FrontendView.swift */; };
+		D58213932BDE72AB00AE4662 /* ApiSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58213922BDE72AB00AE4662 /* ApiSchema.swift */; };
+		D58213972BDE73CA00AE4662 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58213962BDE73CA00AE4662 /* LineChart.swift */; };
+		D5A9E8D82BD777CF00714046 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E8D72BD777CF00714046 /* Dashboard.swift */; };
 		D5A9E9132BD82DF400714046 /* RecentLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9122BD82DF400714046 /* RecentLinksView.swift */; };
 		D5A9E9152BD82E0300714046 /* TopLinksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9142BD82E0300714046 /* TopLinksView.swift */; };
 		D5A9E9182BD82EC400714046 /* PickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A9E9172BD82EC400714046 /* PickerButton.swift */; };
@@ -52,9 +53,10 @@
 		D558212C2BD6571C005A00F9 /* OpeninApp_TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpeninApp_TaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55821302BD6571C005A00F9 /* OpeninApp_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskUITests.swift; sourceTree = "<group>"; };
 		D55821322BD6571C005A00F9 /* OpeninApp_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeninApp_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D558213F2BD68021005A00F9 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
-		D5A9E8D72BD777CF00714046 /* FrontendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontendView.swift; sourceTree = "<group>"; };
+		D58213922BDE72AB00AE4662 /* ApiSchema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiSchema.swift; sourceTree = "<group>"; };
+		D58213962BDE73CA00AE4662 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		D5A9E8D72BD777CF00714046 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
 		D5A9E9122BD82DF400714046 /* RecentLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentLinksView.swift; sourceTree = "<group>"; };
 		D5A9E9142BD82E0300714046 /* TopLinksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLinksView.swift; sourceTree = "<group>"; };
 		D5A9E9172BD82EC400714046 /* PickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerButton.swift; sourceTree = "<group>"; };
@@ -111,13 +113,13 @@
 		D55821142BD6571A005A00F9 /* OpeninApp_Task */ = {
 			isa = PBXGroup;
 			children = (
-				D5A9E9162BD82EAF00714046 /* CustomDesignViews */,
+				D58213912BDE726F00AE4662 /* Model */,
+				D5A9E9162BD82EAF00714046 /* CustomDesigns */,
 				D5A9E9112BD82DCF00714046 /* Views */,
 				D55821152BD6571A005A00F9 /* OpeninApp_TaskApp.swift */,
 				D55821172BD6571A005A00F9 /* ContentView.swift */,
 				D55821192BD6571C005A00F9 /* assets.xcassets */,
 				D558211B2BD6571C005A00F9 /* Preview Content */,
-				D558213F2BD68021005A00F9 /* DashboardView.swift */,
 				D55821472BD6E3C2005A00F9 /* SwiftUIView.swift */,
 			);
 			path = OpeninApp_Task;
@@ -155,23 +157,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D58213912BDE726F00AE4662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D58213922BDE72AB00AE4662 /* ApiSchema.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D5A9E9112BD82DCF00714046 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D5A9E8D72BD777CF00714046 /* FrontendView.swift */,
+				D5A9E8D72BD777CF00714046 /* Dashboard.swift */,
 				D5A9E9122BD82DF400714046 /* RecentLinksView.swift */,
 				D5A9E9142BD82E0300714046 /* TopLinksView.swift */,
+				D58213962BDE73CA00AE4662 /* LineChart.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D5A9E9162BD82EAF00714046 /* CustomDesignViews */ = {
+		D5A9E9162BD82EAF00714046 /* CustomDesigns */ = {
 			isa = PBXGroup;
 			children = (
 				D5A9E9172BD82EC400714046 /* PickerButton.swift */,
 				D5A9E9192BD832ED00714046 /* CustomLink.swift */,
 			);
-			path = CustomDesignViews;
+			path = CustomDesigns;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +322,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A9E9152BD82E0300714046 /* TopLinksView.swift in Sources */,
-				D5A9E8D82BD777CF00714046 /* FrontendView.swift in Sources */,
+				D5A9E8D82BD777CF00714046 /* Dashboard.swift in Sources */,
 				D55821182BD6571A005A00F9 /* ContentView.swift in Sources */,
-				D55821402BD68021005A00F9 /* DashboardView.swift in Sources */,
 				D5A9E9182BD82EC400714046 /* PickerButton.swift in Sources */,
+				D58213972BDE73CA00AE4662 /* LineChart.swift in Sources */,
 				D5A9E9132BD82DF400714046 /* RecentLinksView.swift in Sources */,
 				D55821482BD6E3C2005A00F9 /* SwiftUIView.swift in Sources */,
+				D58213932BDE72AB00AE4662 /* ApiSchema.swift in Sources */,
 				D5A9E91A2BD832ED00714046 /* CustomLink.swift in Sources */,
 				D55821162BD6571A005A00F9 /* OpeninApp_TaskApp.swift in Sources */,
 			);

@@ -5,13 +5,6 @@
 //  Created by Abhishek Jadaun on 23/04/24.
 //
 
-//
-//  RecentLinksViews.swift
-//  OpeninApp_Task
-//
-//  Created by Abhishek Jadaun on 23/04/24.
-//
-
 import SwiftUI
 import Foundation
 import SwiftUICharts

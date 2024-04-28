@@ -12,7 +12,6 @@ struct LinkCardView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            // Image
             HStack {
                 if let imageUrl = link.thumbnail, !imageUrl.isEmpty {
                     AsyncImage(url: URL(string: imageUrl)) { phase in
@@ -33,7 +32,6 @@ struct LinkCardView: View {
                         }
                     }
                 } else if let imageUrl = link.originalImage, !imageUrl.isEmpty {
-                    // Fallback to original image URL if thumbnail is not available
                     AsyncImage(url: URL(string: imageUrl)) { phase in
                         switch phase {
                         case .success(let image):
@@ -52,7 +50,6 @@ struct LinkCardView: View {
                         }
                     }
                 } else {
-                    // Display placeholder image if no image URL is available
                     Image(systemName: "photo")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -94,7 +91,7 @@ struct LinkCardView: View {
             HStack {
                 Text("\(link.webLink)")
                     .font(.subheadline)
-                    .foregroundColor(.blue) 
+                    .foregroundColor(.blue)
                     .lineLimit(1)
                 
                 Spacer()
@@ -114,7 +111,7 @@ struct LinkCardView: View {
                     .foregroundColor(.blue)
             )
             .padding(.top)
-
+            
             
         }
         .background(Color.white)
